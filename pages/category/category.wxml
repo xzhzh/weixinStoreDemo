@@ -1,0 +1,32 @@
+<!--pages/category/category.wxml-->
+<view class='main'>
+<view class='category_left'>
+   <view wx:for="{{category}}" wx:key="{{item.id}}" data-id="{{item.id}}" data-index="{{index}}" bindtap='switchTab' class="category_item {{index==nowIndex?'on':''}}">{{item.cate}}</view>
+</view>
+
+<scroll-view scroll-y="true"  class="category_right">
+  <block class="category_box"  wx:key="{{item.id}}" wx:for="{{category}}" wx:if="{{item.id==nowId}}" >
+    <view class="cata_banner"> 
+       <view class="cata_img">
+          <image src="{{item.banner}}"></image>
+       </view>
+       <view class='cate_title'>
+          <text>{{item.cate}}</text>
+       </view>
+    </view>
+    
+    <view class="product">
+      <view class="product_list" wx:for="{{item.detail}}" wx:key="{{val.name}}" wx:for-item="val">
+         <navigator url="../list/list">
+            <image src="{{val.thumb}}"></image>
+            <view class="product_name"><text>{{val.name}}</text></view>
+        </navigator>
+      </view>
+    </view>
+
+
+  </block>
+
+</scroll-view>
+
+</view>

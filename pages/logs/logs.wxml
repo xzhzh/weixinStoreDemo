@@ -1,0 +1,37 @@
+<!--logs.wxml-->
+<view class="mine">
+  <view class='top'>
+    <!-- <image class="user_img" src="{{thumb}}"></image> -->
+    <open-data class="user_img" type="userAvatarUrl"></open-data>
+    <view class="username"><open-data type="userNickName" ></open-data></view>
+     <view class="about"><text>关于我</text></view>
+  </view>
+
+  <view class="adress"> 
+    <view class='adress_manage'>
+        <navigator url="/pages/address">地址管理 <text class='rightdir'>></text></navigator>
+    </view>
+    <view class="useritem"><text>lilin</text></view>
+    <view class="useritem"><text>13654567897</text></view>
+    <view class="useritem"><text>广州市元岗大道</text></view>
+  </view>
+
+  <view class='my_order'>
+       <view class='adress_manage'>
+        <view>我的订单</view>
+      </view>
+      <block wx:for="{{orders}}" wx:key="item.number"> 
+          <view class="useritem"><text>订单编号：{{item.number}}</text></view>
+          <view class='order_list'>
+            <view>
+              <image class="order_detail_img" src="{{item.thumb}}"></image> 
+              <view class="order_list_title">
+                <view class='del_title'>{{item.name}}</view>
+                <view class='del_number'>{{item.count}}个</view>
+              </view>
+              <text class="order_state">{{item.status}}</text>
+            </view>
+          </view>
+      </block>
+    </view>
+</view>

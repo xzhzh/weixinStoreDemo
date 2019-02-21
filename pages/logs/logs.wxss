@@ -1,0 +1,87 @@
+.mine{
+  height:100%;
+}
+.top{
+  height:60px;
+  background:#AB956D;
+}
+.user_img{
+  width:40px;
+  height:40px;
+  margin:5px;
+  float:left;
+  background:#fff;
+ border-radius: 50%;
+}
+.username{
+  float:left;
+  margin-left:5px;
+  font-size:15px;
+  font-weight: bold;
+  margin-top:15px;
+  color: #ddd;
+}
+.about{
+  float:right;
+  margin-right:10px;
+  font-size:15px;
+  color:#ddd;
+  margin-top:15px;
+  font-weight: bold;
+}
+.adress{
+  padding-bottom:10px;
+  background:#ededed;
+}
+.adress_manage{
+  height:40px;
+  background:#fff;
+  font-size:14px;
+  text-align: center;
+  color:#999;
+  line-height:40px;
+  border-bottom:1px solid #ededed;
+}
+.rightdir{
+  float:right;
+  margin-right:10px;
+  font-size:18px;
+  font-weight: bold;
+  color:#999;
+}
+.useritem{
+  height:40px;
+  line-height: 40px;
+  font-size:15px;
+  color:#999;
+  font-weight: bold;
+  background:#fff;
+  padding-left:5px;
+  border-bottom:1px solid #ededed;
+}
+.order_detail_img{
+  width:75px;
+  height:75px;
+  float:left;
+}
+.order_list{
+  overflow: hidden;
+  border-bottom:1px solid #ededed;
+}
+.order_list_title{
+  padding-left:5px;
+  float:left;
+  color:#999;
+  font-size:14px;
+}
+.del_title{
+  margin-top:10px;
+  margin-bottom:3px;
+}
+.order_state{
+  float:right;
+  font-size:14px;
+  margin-right:10px;
+  color:#999;
+  line-height: 75px;
+}
